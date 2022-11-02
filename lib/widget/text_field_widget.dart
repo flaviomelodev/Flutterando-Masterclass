@@ -19,6 +19,7 @@ class TextFieldWidget extends StatelessWidget {
         labelText: labelText,
         labelStyle: const TextStyle(
           color: Color(0xFF327AD9),
+          fontWeight: FontWeight.bold,
         ),
       ),
       keyboardType: keyboardType,
