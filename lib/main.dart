@@ -3,7 +3,7 @@ import 'package:desafio1_masterclass/pages/challenge_2.dart';
 import 'package:desafio1_masterclass/pages/challenge_3.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/splash_page.dart';
+import 'pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Desafio Masterclass 6',
       initialRoute: '/',
       routes: {
-        '/': (context) => const SplashPage(),
+        '/': (context) => const HomePage(),
         '/challenge1': (context) => const Challenge1(),
         '/challenge2': (context) => const Challenge2(),
         '/challenge3': (context) => const Challenge3(),
