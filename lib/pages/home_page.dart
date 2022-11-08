@@ -1,6 +1,7 @@
 import 'package:desafio1_masterclass/pages/challenge_1.dart';
 import 'package:desafio1_masterclass/pages/challenge_2.dart';
 import 'package:desafio1_masterclass/pages/challenge_3.dart';
+import 'package:desafio1_masterclass/pages/login_page_facebbok.dart';
 import 'package:desafio1_masterclass/widget/logo_challenge_1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -10,7 +11,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final PageController controller = PageController(
+    return const LoginPageFacebook();
+  }
+}
+
+
+
+//Os 3 desafios
+/*
+final PageController controller = PageController(
       initialPage: 0,
     );
     return PageView(
@@ -22,5 +31,5 @@ class HomePage extends StatelessWidget {
         Challenge3(),
       ],
     );
-  }
-}
+
+ */
