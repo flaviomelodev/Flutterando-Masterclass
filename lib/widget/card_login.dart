@@ -9,7 +9,6 @@ class CardLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
           height: 300,

@@ -16,22 +16,7 @@ class Challenge3 extends StatelessWidget {
         children: [
           Column(
             children: [
-              Container(
-                height: MediaQuery.of(context).size.height * 0.5,
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: <Color>[
-                        Color(0xFF0597F2),
-                        Color(0xFF327AD9),
-                        Color(0xFF595FD9),
-                      ]),
-                ),
-                child: const Center(
-                  child: LogoChallenge3(),
-                ),
-              ),
+              Background(),
             ],
           ),
 
@@ -60,6 +45,32 @@ class Challenge3 extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class Background extends StatelessWidget {
+  const Background({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.5,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: <Color>[
+              Color(0xFF0597F2),
+              Color(0xFF327AD9),
+              Color(0xFF595FD9),
+            ]),
+      ),
+      child: const Center(
+        child: LogoChallenge3(),
       ),
     );
   }
